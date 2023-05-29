@@ -1,14 +1,7 @@
 <div id="contact-info" class="text-center">
   <h1 class="text-uppercase mt-4">Conocenos</h1>
 
-  <div class="d-flex justify-content-center">
-    <%= link_to "/whatsapp", target: "_blank" do %>
-      <%= image_tag "icons/icons8-whatsapp-80.webp", id: "wapp-icon", class: "me-2" %>
-    <% end %>
-    <%= link_to "https://instagram.com/derosecervino", target: "_blank" do %>
-      <%= image_tag "icons/instagram.webp", id: "ig-icon", class: "ms-2" %>
-    <% end %>
-  </div>
+  <%= render "socials" %>
 
   <div class="container mt-4 mb-2 ratio ratio-21x9">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.4923624602694!2d-58.416034900841474!3d-34.579944532864204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb579149905eb%3A0x8b01ed4c0c095bf5!2sDeROSE%20Method%20%7C%20Cervi%C3%B1o!5e0!3m2!1sen!2sar!4v1685399785107!5m2!1sen!2sar"
