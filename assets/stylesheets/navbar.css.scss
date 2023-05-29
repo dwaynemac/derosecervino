@@ -9,6 +9,9 @@
       max-height: var(--navbar-height);
     }
   }
+  .navbar-toggler {
+    background-color: var(--brand-brown);
+  }
   .navbar-nav {
     .nav-item {
       a {
