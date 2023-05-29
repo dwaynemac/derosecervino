@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title><%= current_page.data.fetch("title", "") %> DeROSE Method Cerviño - en palermo chico</title>
+
+
+    <%= render "layouts/bootstrap_cdn" %>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <%= render "layouts/navbar" %>
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>
