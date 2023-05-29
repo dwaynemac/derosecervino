@@ -7,9 +7,11 @@ title: Inicio
 <div id="home-band-2" class="brand-blue-bg text-center px-4">
   <p class="text-uppercase">Certificados por la Red DeROSE desde hace más de 10 años.</p>
   <p>
-    <%= image_tag "logo-blanco.webp", class: "logo img-fluid" %>
+    <%= link_to global_web_url, target: "_blank" do %>
+      <%= image_tag "logo-blanco.webp", class: "logo img-fluid" %>
+    <% end %>
   </p>
-  <p>Conocé más de qué se trata en <%= link_to "www.derosemethod.org", "https://www.derosemethod.org/es", target: "_blank" %></p>
+  <p>Conocé más de qué se trata en <%= link_to global_web, global_web_url, target: "_blank", style: "color: #fff" %></p>
 </div>
 <div id="home-testimonials" class="container">
   <div class="row my-1">
