@@ -12,6 +12,20 @@ module PageHelper
     link_to page.data.fetch("title", page.request_path), page.request_path
   end
 
+  def nav_link_to(text, path, options= {})
+    if current_page.request_path == path
+      options[:class] ||= ""
+      options[:class] << " active"
+    end
+    link_to text, path, options
+  end
+
+  def cta_link_to(text, path, options= {})
+    options[:class] ||= ""
+    options[:class] << " btn btn-lg btn-primary btn-cta"
+    link_to text, path, options
+  end
+
   def link_to_if_current(text, page, active_class: "active")
     if page == current_page
       link_to text, page.request_path, class: active_class

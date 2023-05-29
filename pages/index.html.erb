@@ -1,9 +1,43 @@
 ---
 title: Inicio
-redirect_to: somehere
 ---
-<%= current_page.data %>
+<div id="home-band-1" class="fran-focus-bg d-flex align-items-end justify-content-center">
+  <%= cta_link_to "Empezá hoy", "/whatsapp", class: "mb-4 text-uppercase" %>
+</div>
+<div id="home-band-2" class="brand-blue-bg text-center px-4">
+  <p class="text-uppercase">Certificados por la Red DeROSE desde hace más de 10 años.</p>
+  <p>
+    <%= image_tag "logo-blanco.webp", class: "logo img-fluid" %>
+  </p>
+  <p>Conocé más de qué se trata en <%= link_to "www.derosemethod.org", "https://www.derosemethod.org/es", target: "_blank" %></p>
+</div>
+<div id="home-testimonials" class="container">
+  <div class="row my-1">
+    <% %W(agos.webp carlos.webp cata.webp).each do |image| %>
+      <div class="col-md">
+        <%= image_tag "testimonials/#{image}", id: "img-#{image.parameterize}", class: "img-fluid" %>
+      </div>
+    <% end %>
+  </div>
+  <div class="row my-1">
+  <% %W(estivi.webp flor.webp meli.webp).each do |image| %>
+    <div class="col-md">
+      <%= image_tag "testimonials/#{image}", id: "img-#{image.parameterize}", class: "img-fluid" %>
+    </div>
+  <% end %>
+  </div>
+  <div class="row my-1">
+  <% %W(pau.webp sofi.webp).each do |image| %>
+    <div class="col-md">
+      <%= image_tag "testimonials/#{image}", id: "img-#{image.parameterize}", class: "img-fluid" %>
+    </div>
+  <% end %>
+    <div class="col-md"></div>
+  </div>
+</div>
+<div id="home-band-3" class="grupo-en-puente-bg d-flex flex-column justify-content-between align-items-center">
+  <h1 id="online-y-presencial" class="text-uppercase">Presencial y online</h1>
 
-<p>Certificados por la Red DeROSE desde hace más de 10 años. TEST</p>
-<%= image_tag "logo-blanco.webp" %>
-<p>Conocé más de qué se trata en <%= link_to "www.derosemethod.org", "https://www.derosemethod.org/es", target: "_blank" %></p>
+  <%= cta_link_to "Empezá hoy", "/whatsapp", class: "mb-4 text-uppercase" %>
+</div>
+<%= render "contact_info" %>

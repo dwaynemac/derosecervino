@@ -1,0 +1,43 @@
+:root {
+  --brand-blue: #040e85;
+  --brand-white: #fff;
+  --brand-brown: #c69c6c;
+
+}
+
+.brand-blue-bg {
+  background: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+.brand-white-bg {
+  background: var(--brand-white);
+}
+
+.fran-focus-bg {
+  background-image: image-url('fotos/bg-fran-focus.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grupo-en-puente-bg {
+  background-attachment: fixed;
+  background-image: image-url('fotos/bg-grupo-en-puente.jpeg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-cta {
+  background-color: var(--brand-brown) !important;
+  border-color: var(--brand-brown) !important;
+  &:hover {
+    background-color: var(--brand-white) !important;
+    border-color: var(--brand-white) !important;
+    color: var(--brand-brown) !important;
+  }
+}

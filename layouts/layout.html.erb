@@ -3,9 +3,9 @@
   <head>
     <meta charset='utf-8'>
     <title><%= current_page.data.fetch("title", "") %> DeROSE Method Cerviño - en palermo chico</title>
-
-
+    <%= stylesheet_link_tag "brand" %>
     <%= render "layouts/bootstrap_cdn" %>
+    <%= stylesheet_link_tag "navbar" %>
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
@@ -13,5 +13,6 @@
     <main>
       <%= yield %>
     </main>
+    <%= render "layouts/footer" %>
   </body>
 </html>

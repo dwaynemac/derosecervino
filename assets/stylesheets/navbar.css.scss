@@ -1,3 +1,23 @@
+:root {
+  --navbar-height: 60px;
+}
+
 #main-navigation {
   background-color: var(--brand-blue);
+  .navbar-brand {
+    img {
+      max-height: var(--navbar-height);
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      a {
+        color: var(--brand-white);
+        text-transform: uppercase;
+        &:hover {
+          color: var(--brand-brown);
+        }
+      }
+    }
+  }
 }
