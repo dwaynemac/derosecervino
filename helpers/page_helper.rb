@@ -2,6 +2,9 @@ module PageHelper
 
   def js_redirect_to(url)
     <<-HTML
+      <noscript>
+        Navegador no soportado. Haga click <a href="#{url}">aquí</a> para continuar: <a href="#{url}">#{url}</a>.
+      </noscript>
       <script type="text/javascript">
         window.location.href = "#{url}";
       </script>
