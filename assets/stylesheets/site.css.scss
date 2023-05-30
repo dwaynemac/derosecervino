@@ -35,9 +35,14 @@ main#main {
 #home-presencial-y-online {
   min-height: 60vh;
   #online-y-presencial {
-    font-size: 4rem;
     font-weight: bolder;
     margin-top: 2rem;
+    @media(max-width: 400px){
+      font-size: 3rem;
+    }
+    @media (min-width: 400px) {
+      font-size: 4rem;
+    }
   }
   .btn-cta {
     margin-bottom: 3rem;
@@ -47,6 +52,7 @@ main#main {
 footer {
   height: var(--footer-height);
   background-color: var(--brand-blue);
+  padding-bottom: 4rem !important;
 }
 
 #wapp-icon{
@@ -72,6 +78,5 @@ footer {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
-
   }
 }
