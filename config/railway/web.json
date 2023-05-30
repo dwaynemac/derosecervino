@@ -17,7 +17,7 @@
     }
   },
   "deploy": {
-    "startCommand": "bundle exec sitepress server -p 3000",
+    "startCommand": "bundle exec sitepress server -p $PORT",
     "healthcheckPath": "/ping.txt",
     "healthcheckTimeout": 1000,
     "restartPolicyType": "ON_FAILURE",
