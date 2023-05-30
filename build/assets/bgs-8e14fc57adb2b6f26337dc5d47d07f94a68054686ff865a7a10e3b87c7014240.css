@@ -1,0 +1,49 @@
+/* line 1, assets/stylesheets/bgs.css.scss */
+.bg-brand-blue {
+  background: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+/* line 6, assets/stylesheets/bgs.css.scss */
+.bg-brand-white {
+  background: var(--brand-white);
+}
+
+/* line 10, assets/stylesheets/bgs.css.scss */
+.bg-brand-brown {
+  background: var(--brand-brown);
+  color: var(--brand-white);
+}
+
+/* line 15, assets/stylesheets/bgs.css.scss */
+.bg-translucent-white {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 19, assets/stylesheets/bgs.css.scss */
+.bg-fran-focus {
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-image: url(/assets/fotos/bg-fran-focus-d78aef45f7de366db624baab59d4e43e317fed4313f6fd8de0d4250e90ec2f71.webp);
+  background-size: cover;
+}
+
+/* line 27, assets/stylesheets/bgs.css.scss */
+.bg-grupo-en-puente {
+  background-image: url(/assets/fotos/bg-grupo-en-puente-cf1f0f292ae9d26d1ac9f84197fc3e76565bedc677e11fbd74275f5fa617540c.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 35, assets/stylesheets/bgs.css.scss */
+.bg-lu-y-mateo {
+  background-image: url(/assets/fotos/bg-lu-y-mateo-a90e7199563f080ad83f1e304d74cc74a4ccde429c9298c94b63dabde4c6288e.webp);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
