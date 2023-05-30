@@ -54,4 +54,8 @@ module PageHelper
   def instagram_url
     "https://www.instagram.com/derosecervino/"
   end
+
+  def learn_url
+    "https://learn.derose.app"
+  end
 end
