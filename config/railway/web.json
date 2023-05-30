@@ -5,9 +5,6 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "watchPaths": [
-      "build/**/*"
-    ],
     "healthcheckPath": "/ping.txt",
     "healthcheckTimeout": 1000,
     "restartPolicyType": "ON_FAILURE",
