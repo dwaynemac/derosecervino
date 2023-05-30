@@ -17,16 +17,14 @@
 }
 
 .bg-fran-focus {
-  background-image: image-url('fotos/bg-fran-focus.webp');
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
+  background-image: image-url('fotos/bg-fran-focus.webp');
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .bg-grupo-en-puente {
-  background-attachment: fixed;
   background-image: image-url('fotos/bg-grupo-en-puente.jpeg');
   background-position-x: center;
   background-position-y: top;
