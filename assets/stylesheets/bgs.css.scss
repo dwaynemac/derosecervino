@@ -7,6 +7,10 @@
   background: var(--brand-white);
 }
 
+.bg-translucent-white {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .bg-fran-focus {
   background-image: image-url('fotos/bg-fran-focus.webp');
   background-position-x: center;
@@ -25,7 +29,7 @@
   background-size: cover;
 }
 
-.lu-y-mateo-bg {
+.bg-lu-y-mateo {
   background-image: image-url('fotos/bg-lu-y-mateo.webp');
   background-position-x: center;
   background-position-y: top;
