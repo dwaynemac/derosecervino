@@ -1,3 +1,7 @@
+# TODOs
+- [ ] Add a favicon
+- [ ] Redirect through NGINX instead of using javascript
+
 # Sitepress
 Site creado con https://sitepress.cc
 
