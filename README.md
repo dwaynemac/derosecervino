@@ -1,3 +1,9 @@
+# Deployment
+- sitepress compile
+- git add .
+- git commit -m "message"
+- git push
+
 # Getting started
 
 Welcome to your new Sitepress site! If you know Rails, you'll feel right at home in Sitepress because it's built on top of Rails. There's a few things you'll need to know to get around:
