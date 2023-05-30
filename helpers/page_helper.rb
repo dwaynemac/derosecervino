@@ -46,4 +46,12 @@ module PageHelper
       link_to text, page.request_path
     end
   end
+
+  def whatsapp_url
+    "https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0"
+  end
+
+  def instagram_url
+    "https://www.instagram.com/derosecervino/"
+  end
 end
