@@ -59,3 +59,19 @@ footer {
 #horarios {
   height: 100vh;
 }
+
+#yoga {
+  .row:first-child {
+    max-height: calc(713px - 13px);
+    .col-sm-6:last-child {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  #foto-bachi {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+  }
+}
