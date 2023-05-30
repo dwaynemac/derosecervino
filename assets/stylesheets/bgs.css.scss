@@ -1,0 +1,36 @@
+.bg-brand-blue {
+  background: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+.brand-white-bg {
+  background: var(--brand-white);
+}
+
+.fran-focus-bg {
+  background-image: image-url('fotos/bg-fran-focus.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.grupo-en-puente-bg {
+  background-attachment: fixed;
+  background-image: image-url('fotos/bg-grupo-en-puente.jpeg');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lu-y-mateo-bg {
+  background-image: image-url('fotos/bg-lu-y-mateo.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+

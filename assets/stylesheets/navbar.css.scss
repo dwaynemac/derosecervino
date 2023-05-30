@@ -3,7 +3,7 @@
 }
 
 #main-navigation {
-  height: var(--navbar-height);
+  min-height: var(--navbar-height);
   background-color: var(--brand-blue);
   .navbar-brand {
     img {

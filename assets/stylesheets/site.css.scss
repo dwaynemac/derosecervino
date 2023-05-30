@@ -1,12 +1,19 @@
+:root {
+  --footer-height: 8vh;
+}
 main#main {
-  margin-top: var(--navbar-height);
+  margin-top: calc(var(--navbar-height) + 1rem);
+  margin-bottom: calc(var(--footer-height) + 1rem);
 }
 
 #home-band-1 {
   min-height: calc(100vh - var(--navbar-height) - 200px);
 }
 
-#home-band-2 {
+#home-drm {
+  &:target {
+    padding-top: var(--navbar-height);
+  }
   .logo {
     max-width: 300px;
   }
@@ -34,12 +41,11 @@ main#main {
   }
   .btn-cta {
     margin-bottom: 3rem;
-
   }
 }
 
 footer {
-  min-height: 8vh;
+  height: var(--footer-height);
   background-color: var(--brand-blue);
 }
 
@@ -48,4 +54,8 @@ footer {
 }
 #ig-icon {
   width: 2rem;
+}
+
+#horarios {
+  height: 100vh;
 }
