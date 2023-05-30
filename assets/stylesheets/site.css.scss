@@ -1,5 +1,8 @@
-#home-band-1 {
+main#main {
   margin-top: var(--navbar-height);
+}
+
+#home-band-1 {
   min-height: calc(100vh - var(--navbar-height) - 200px);
 }
 

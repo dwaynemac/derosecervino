@@ -1,12 +1,13 @@
 :root {
-  --navbar-height: 60px;
+  --navbar-height: 80px;
 }
 
 #main-navigation {
+  height: var(--navbar-height);
   background-color: var(--brand-blue);
   .navbar-brand {
     img {
-      max-height: var(--navbar-height);
+      max-height: calc(var(--navbar-height) - 1rem);
     }
   }
   .navbar-toggler {
