@@ -1,6 +1,9 @@
 # TODOs
 - [ ] Add a favicon
-- [ ] Redirect through NGINX instead of using javascript
+- [X] Redirect through NGINX instead of using javascript
+
+# Redirects
+Write redirects in config/nginx/redirects.conf
 
 # Sitepress
 Site creado con https://sitepress.cc
