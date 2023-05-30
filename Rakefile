@@ -9,6 +9,8 @@ task :compile do
   sh 'bundle exec sitepress compile'
 end
 
+task build: %w[clean compile]
+
 ## Example deployment script to an Amazon Web Servie S3 bucket.
 # s3_bucket_name = "<replace-with-your-bucket-name>"
 #
