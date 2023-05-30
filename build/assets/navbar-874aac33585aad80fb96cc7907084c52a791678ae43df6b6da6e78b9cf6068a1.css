@@ -1,0 +1,42 @@
+/* line 1, assets/stylesheets/navbar.css.scss */
+:root {
+  --navbar-height: 80px;
+}
+
+/* line 5, assets/stylesheets/navbar.css.scss */
+#main-navigation {
+  min-height: var(--navbar-height);
+  background-color: var(--brand-blue);
+}
+
+/* line 8, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-brand {
+  margin-right: 4rem;
+}
+
+/* line 10, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-brand img {
+  max-height: calc(var(--navbar-height) - 2rem);
+}
+
+/* line 14, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-toggler {
+  background-color: var(--brand-brown);
+}
+
+/* line 18, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-nav .nav-item {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* line 21, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-nav .nav-item a {
+  color: var(--brand-white);
+  text-transform: uppercase;
+}
+
+/* line 24, assets/stylesheets/navbar.css.scss */
+#main-navigation .navbar-nav .nav-item a:hover {
+  color: var(--brand-brown);
+}
