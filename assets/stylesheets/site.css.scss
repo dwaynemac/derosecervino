@@ -80,3 +80,10 @@ footer {
     min-height: 100%;
   }
 }
+
+.btn-xl {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 3.5rem;
+  --bs-btn-font-size: 2rem;
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
+}

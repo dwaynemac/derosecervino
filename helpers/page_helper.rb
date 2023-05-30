@@ -35,7 +35,7 @@ module PageHelper
 
   def cta_link_to(text, path, options= {})
     options[:class] ||= ""
-    options[:class] << " btn btn-lg btn-primary btn-cta"
+    options[:class] << " btn btn-xl btn-primary btn-cta"
     link_to text, path, options
   end
 
