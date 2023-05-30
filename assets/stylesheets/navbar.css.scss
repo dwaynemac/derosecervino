@@ -6,8 +6,9 @@
   min-height: var(--navbar-height);
   background-color: var(--brand-blue);
   .navbar-brand {
+    margin-right: 4rem;
     img {
-      max-height: calc(var(--navbar-height) - 1rem);
+      max-height: calc(var(--navbar-height) - 2rem);
     }
   }
   .navbar-toggler {
