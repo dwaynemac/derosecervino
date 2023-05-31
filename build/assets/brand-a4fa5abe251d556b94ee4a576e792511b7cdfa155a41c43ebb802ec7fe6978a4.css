@@ -1,0 +1,19 @@
+/* line 1, assets/stylesheets/brand.css.scss */
+:root {
+  --brand-blue: #040e85;
+  --brand-white: #fff;
+  --brand-brown: #c69c6c;
+}
+
+/* line 7, assets/stylesheets/brand.css.scss */
+.btn-cta {
+  background-color: var(--brand-brown) !important;
+  border-color: var(--brand-brown) !important;
+}
+
+/* line 10, assets/stylesheets/brand.css.scss */
+.btn-cta:hover {
+  background-color: var(--brand-white) !important;
+  border-color: var(--brand-white) !important;
+  color: var(--brand-brown) !important;
+}
