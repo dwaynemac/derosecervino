@@ -1,5 +1,9 @@
 module PageHelper
 
+  def page_title
+    [current_page.data.fetch("title",nil),"DeROSE Method Sede Cerviño - en palermo chico"].compact.join(" - ")
+  end
+
   def js_redirect_to(url)
     <<-HTML
       <noscript>

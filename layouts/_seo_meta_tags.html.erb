@@ -1,3 +1,5 @@
+<meta property="og:title" content="<%= page_title %>"/>
+
 <% if (content = current_page.data.fetch("meta_description", nil)) %>
   <meta name="description" content="<%= content %>"/>
 <% end %>
@@ -7,9 +9,11 @@
 <% if (content = current_page.data.fetch("meta_author", nil)) %>
   <meta name="author" content="<%= content %>"/>
 <% end %>
+<% if (content = current_page.data.fetch("og_image", nil)) %>
+  <meta property="og:image" content="<%= content %>"/>
+<% end %>
 
 <% if false %>
-<meta property="og:title" content="DeROSE Method es otra cosa"/>
 <meta property="og:description" content="DeROSE Method puede ser el entrenamiento que estás buscando. Hábitos para calidad de vida y alta performance."/>
 <meta property="og:image" content="https://static.wixstatic.com/media/b339e9_2c04be3312ae4a4f834e3a659e79b53c%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b339e9_2c04be3312ae4a4f834e3a659e79b53c%7Emv2.jpg"/>
 <meta property="og:image:width" content="2500"/>
