@@ -1,0 +1,21 @@
+<script type="module">
+  import { Application, Controller } from "https://unpkg.com/@hotwired/stimulus/dist/stimulus.js"
+  window.Stimulus = Application.start()
+  Stimulus.register("navbar", class extends Controller {
+    connect() {
+      console.log("nabar connected")
+      const navLinks = document.querySelectorAll('.nav-item')
+      const menuToggle = document.getElementById('navbarSupportedContent')
+      const bsCollapse = new bootstrap.Collapse(menuToggle, {
+        toggle: false
+      })
+      navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+          if(bsCollapse._isShown()){
+            bsCollapse.hide()
+          }
+        })
+      })
+    }
+  })
+</script>
