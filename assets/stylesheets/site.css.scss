@@ -94,3 +94,8 @@ footer {
   --bs-btn-font-size: 2rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
+
+#error_404 {
+  color: var(--brand-blue);
+  min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+}
