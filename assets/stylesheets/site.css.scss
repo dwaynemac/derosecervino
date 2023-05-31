@@ -64,7 +64,8 @@ footer {
 }
 
 #goto-landing {
-  height: 100vh;
+  height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  color: var(--brand-blue);
 }
 
 #yoga {
