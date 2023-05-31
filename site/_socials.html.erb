@@ -1,8 +1,11 @@
 <div class="d-flex justify-content-center align-items-center">
-  <%= link_to "/whatsapp", target: "_blank" do %>
-    <%= image_tag "icons/icons8-whatsapp-80.webp", id: "wapp-icon", class: "me-2" %>
+  <%= link_to "/whatsapp", target: "_blank", class: "mx-4" do %>
+    <%= render "site/icons/whatsapp" %>
   <% end %>
-  <%= link_to "/instagram", target: "_blank" do %>
-    <%= image_tag "icons/instagram.webp", id: "ig-icon", class: "ms-2" %>
+  <%= link_to "/instagram", target: "_blank", class: "mx-4" do %>
+    <%= render "site/icons/instagram" %>
+  <% end %>
+  <%= link_to "/map", target: "_blank", class: "mx-4" do %>
+    <%= render "site/icons/geo-alt" %>
   <% end %>
 </div>

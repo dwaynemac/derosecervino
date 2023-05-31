@@ -56,12 +56,26 @@ footer {
   padding-bottom: 4rem !important;
 }
 
-#wapp-icon{
+.bi.bi-whatsapp {
   width: 2rem;
 }
-#ig-icon {
+.bi.bi-instagram {
   width: 2rem;
 }
+.bi.bi-geo-alt {
+  width: 2rem;
+}
+.white-icons {
+  .bi {
+    color: var(--brand-white);
+  }
+}
+.blue-icons {
+  .bi {
+    color: var(--brand-blue);
+  }
+}
+
 
 #goto-landing {
   height: calc(100vh - var(--navbar-height) - var(--footer-height));
