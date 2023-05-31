@@ -23,15 +23,6 @@ module PageHelper
     link_to text, path, options
   end
 
-  # Es la url de la web global legible por humanos
-  def global_web
-    "www.derosemethod.org"
-  end
-
-  # Es la url de la web global para el link
-  def global_web_url
-    "https://www.derosemethod.org/es"
-  end
 
   def cta_link_to(text, path, options= {})
     options[:class] ||= ""
@@ -47,11 +38,25 @@ module PageHelper
     end
   end
 
+  # Es la url de la web global legible por humanos
+  def global_web
+    "www.derosemethod.org"
+  end
+
+  # Es la url de la web global para el link
+  def global_web_url
+    "https://www.derosemethod.org/es"
+  end
+
   def whatsapp_url
     "https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0"
   end
 
   def instagram_url
     "https://www.instagram.com/derosecervino/"
+  end
+
+  def learn_url
+    "https://learn.derose.app"
   end
 end
