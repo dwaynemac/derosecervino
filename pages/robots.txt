@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /error_pages/
+Disallow: /assets/
+Disallow: /ping.txt
