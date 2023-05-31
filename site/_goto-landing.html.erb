@@ -1,0 +1,8 @@
+<div id="goto-landing" class="container-fluid d-flex justify-content-center align-items-center bg-lu-y-mateo">
+  <div class="bg-translucent-white p-4 text-center">
+    <p>
+      <%= current_page.data["text"] %>
+    </p>
+    <%= cta_link_to current_page.data["cta_text"], current_page.data["cta_url"], target: "_blank" %>
+  </div>
+</div>
