@@ -1,5 +1,9 @@
 module PageHelper
 
+  def derose_brand
+    "<span class='derose_brand'>De<span class='smallcaps'>Rose</span></span>".html_safe
+  end
+
   def base_url
     "https://www.derosecervino.com.ar"
   end
