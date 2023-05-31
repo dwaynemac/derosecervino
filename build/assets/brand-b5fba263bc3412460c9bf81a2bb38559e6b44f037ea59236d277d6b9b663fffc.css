@@ -17,3 +17,8 @@
   border-color: var(--brand-white) !important;
   color: var(--brand-brown) !important;
 }
+
+/* line 18, assets/stylesheets/brand.css.scss */
+.derose_brand .smallcaps {
+  font-variant: small-caps;
+}

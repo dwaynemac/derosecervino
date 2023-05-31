@@ -90,34 +90,35 @@ footer {
 }
 
 /* line 66, assets/stylesheets/site.css.scss */
-#horarios, #pricing, #private-teacher {
-  height: 100vh;
+#goto-landing {
+  height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  color: var(--brand-blue);
 }
 
-/* line 71, assets/stylesheets/site.css.scss */
+/* line 72, assets/stylesheets/site.css.scss */
 #yoga .row:first-child {
   max-height: calc(713px - 13px);
 }
 
-/* line 73, assets/stylesheets/site.css.scss */
+/* line 74, assets/stylesheets/site.css.scss */
 #yoga .row:first-child .col-sm-6:last-child {
   padding: 0;
   margin: 0;
 }
 
-/* line 78, assets/stylesheets/site.css.scss */
+/* line 79, assets/stylesheets/site.css.scss */
 #yoga #foto-bachi {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
 }
 
-/* line 86, assets/stylesheets/site.css.scss */
+/* line 87, assets/stylesheets/site.css.scss */
 #contact-info h1 {
   color: var(--brand-blue);
 }
 
-/* line 91, assets/stylesheets/site.css.scss */
+/* line 92, assets/stylesheets/site.css.scss */
 .btn-xl {
   --bs-btn-padding-y: 1rem;
   --bs-btn-padding-x: 3.5rem;
@@ -125,7 +126,7 @@ footer {
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-/* line 98, assets/stylesheets/site.css.scss */
+/* line 99, assets/stylesheets/site.css.scss */
 #error_404 {
   color: var(--brand-blue);
   min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
