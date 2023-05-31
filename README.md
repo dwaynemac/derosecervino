@@ -1,6 +1,6 @@
 # TODOs
 - [ ] Add a favicon
-- [ ] Get nginx to work on Docker (currently serving with sitepress server)
+- [X] Get nginx to work on Docker (currently serving with sitepress server)
 
 # Redirects
 Write redirects in config/nginx/redirects.conf
