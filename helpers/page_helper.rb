@@ -1,5 +1,9 @@
 module PageHelper
 
+  def base_url
+    "https://www.derosecervino.com.ar"
+  end
+
   def page_title
     [current_page.data.fetch("title",nil),"DeROSE Method Sede Cerviño - en palermo chico"].compact.join(" - ")
   end
