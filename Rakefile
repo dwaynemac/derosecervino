@@ -9,7 +9,20 @@ task :compile do
   sh 'bundle exec sitepress compile'
 end
 
-task build: %w[clean compile]
+desc "Fresh compilation and new docker image"
+task build: %w[clean compile] do
+  sh "docker build -t derosecervino-dev ."
+end
+
+desc "Run existing docker image"
+task :docker_run do
+  sh "docker run -p 80:80 derosecervino-dev"
+end
+
+desc "Run a fresh docker image"
+task fresh_docker_run: %w[build] do
+  sh "docker run -p 80:80 derosecervino-dev"
+end
 
 ## Example deployment script to an Amazon Web Servie S3 bucket.
 # s3_bucket_name = "<replace-with-your-bucket-name>"
