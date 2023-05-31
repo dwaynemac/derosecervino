@@ -8,7 +8,8 @@ module PageHelper
     [current_page.data.fetch("title",nil),"DeROSE Method Sede Cerviño - en palermo chico"].compact.join(" - ")
   end
 
-  def js_redirect_to(url)
+  def js_redirect
+    url = current_page.data["redirect_to"]
     <<-HTML
       <noscript>
         Navegador no soportado. Haga click <a href="#{url}">aquí</a> para continuar: <a href="#{url}">#{url}</a>.
@@ -54,17 +55,5 @@ module PageHelper
   # Es la url de la web global para el link
   def global_web_url
     "https://www.derosemethod.org/es"
-  end
-
-  def whatsapp_url
-    "https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0"
-  end
-
-  def instagram_url
-    "https://www.instagram.com/derosecervino/"
-  end
-
-  def learn_url
-    "https://learn.derose.app"
   end
 end
