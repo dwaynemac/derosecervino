@@ -53,7 +53,7 @@ module PageHelper
 
   # Es la url de la web global legible por humanos
   def global_web
-    "www.derosemethod.org"
+    "www.#{derose_brand}Method.org".html_safe
   end
 
   # Es la url de la web global para el link
