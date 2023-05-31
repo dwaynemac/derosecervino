@@ -47,3 +47,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+/* line 44, assets/stylesheets/bgs.css.scss */
+.bg-fran-y-chica {
+  background-image: url(/assets/fotos/og-image-7261c6178df5c07d71e1ebce15c3724475e1eab0680e40a3971e8d664a7c298f.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
