@@ -36,7 +36,6 @@ module PageHelper
     link_to text, path, options
   end
 
-
   def cta_link_to(text, path, options= {})
     options[:class] ||= ""
     options[:class] << " btn btn-xl btn-primary btn-cta"
@@ -59,5 +58,12 @@ module PageHelper
   # Es la url de la web global para el link
   def global_web_url
     "https://www.derosemethod.org/es"
+  end
+
+  # Uno random de entre todos los archivos que hay en
+  # assets/images/testimonials
+  def random_testimonial_path
+    testimonials = Dir.glob("assets/images/testimonials/*")
+    testimonials.sample.gsub("assets/images/","")
   end
 end
