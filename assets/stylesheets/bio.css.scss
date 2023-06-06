@@ -1,0 +1,33 @@
+body#bio-layout {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+  header {
+    height: 20vh;
+    #logo img {
+      margin-top: 3dvh;
+      max-height: 15dvh;
+    }
+  }
+  main {
+    .container {
+      min-height: 65dvh;
+    }
+    #links {
+      .list-group-item {
+        background-color: var(--brand-brown);
+        color: var(--brand-white);
+        font-weight: bolder;
+        a {
+          color: var(--brand-white);
+          text-decoration: none;
+        }
+      }
+    }
+    #testimonial {
+
+    }
+  }
+  footer {
+    height: 10dvh;
+  }
+}

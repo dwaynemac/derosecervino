@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset='utf-8'>
+  <title><%= page_title %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+  <%= render "layouts/seo_meta_tags" %>
+
+  <%= stylesheet_link_tag "brand" %>
+  <%= stylesheet_link_tag "bgs" %>
+
+  <%= render "layouts/bootstrap_cdn" %>
+  <%= render "layouts/stimulus" %>
+
+  <%= stylesheet_link_tag "navbar" %>
+  <%= stylesheet_link_tag "bio" %>
+  <%= stylesheet_link_tag "site" %>
+
+  <%= render "layouts/google_analytics" %>
+</head>
+<body id="bio-layout">
+  <header class="d-flex justify-content-center align-items-center">
+    <a id="logo" class="mt-2 mb-2" href="/"><%= image_tag "logo-blanco.webp", class: "img-fluid" %></a>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer class="fixed-bottom">
+    <div class="mt-3 white-icons">
+      <%= render "socials" %>
+    </div>
+  </footer>
+</body>
+</html>
