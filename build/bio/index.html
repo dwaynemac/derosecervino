@@ -42,6 +42,16 @@
       })
     }
   })
+  Stimulus.register("show-random", class extends Controller {
+    static targets = ["item"]
+
+    connect() {
+      console.log("show_random connected")
+      let items = this.itemTargets
+      let item = items[Math.floor(Math.random()*items.length)]
+      item.classList.remove('d-none')
+    }
+  })
 </script>
 
 
@@ -77,8 +87,16 @@
       <a href="/" class="stretched-link">Nuestra web</a>
     </li>
   </ul>
-  <div id="testimonial" class="bg-brand-white p-2 mt-4 mx-4 mb-2">
-    <img class="img-fluid" src="/assets/testimonials/cata-9312e533676789746c9bea3798ba78df2930aa9c5aecbb0f44aa4e06b519b2cf.webp" />
+  <div id="testimonial" class="bg-brand-white p-2 mt-4 mx-4 mb-2" data-controller="show-random">
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/agos-1b6ad08361c39068e9a5b77d3d1cd6a618ce1da2a5b477531324638c875e0c14.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/carlos-622ffd92289bd6fb37c979cd3ef677340bf4460ea5bcfce5b9154ac7ca36de64.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/cata-9312e533676789746c9bea3798ba78df2930aa9c5aecbb0f44aa4e06b519b2cf.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/estivi-81c9e79e7e3e36cbea399599e2247cae1bbae74342633c80d4e898010c41f92e.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/flor-6790139009ad12dc2e864acc313afbe8f2d7c2ed65003b72e911934edda9c2c4.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/martin-h-b816c4bbe59d80112894fa2a28f127e042275148b96dac68cf8a0d2c59a73600.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/meli-9f682ec408ec696eac9703fe7451c46f599701ec11f4315df2c049d378a13bb9.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/pau-85637906915a782f2644cc9083956e4449409bde01ef3a2381c74882232f2c10.webp" />
+      <img class="img-fluid d-none" data-show-random-target="item" src="/assets/testimonials/sofi-6a78b6a970307f18353b6f6b4cee3f7b6bb74b85bed977ad5a3b512164f93476.webp" />
   </div>
 </div>
 

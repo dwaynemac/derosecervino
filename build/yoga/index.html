@@ -46,6 +46,16 @@
       })
     }
   })
+  Stimulus.register("show-random", class extends Controller {
+    static targets = ["item"]
+
+    connect() {
+      console.log("show_random connected")
+      let items = this.itemTargets
+      let item = items[Math.floor(Math.random()*items.length)]
+      item.classList.remove('d-none')
+    }
+  })
 </script>
 
 
