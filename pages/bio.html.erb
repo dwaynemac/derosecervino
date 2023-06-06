@@ -13,7 +13,9 @@ layout: bio
       <a href="/" class="stretched-link">Nuestra web</a>
     </li>
   </ul>
-  <div id="testimonial" class="bg-brand-white p-2 mt-4 mx-4 mb-2">
-    <%= image_tag random_testimonial_path, class: "img-fluid" %>
+  <div id="testimonial" class="bg-brand-white p-2 mt-4 mx-4 mb-2" data-controller="show-random">
+    <% all_testimonial_paths.each do |path| %>
+      <%= image_tag path, class: "img-fluid d-none", data: {show_random_target: "item"} %>
+    <% end %>
   </div>
 </div>

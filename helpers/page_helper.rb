@@ -62,8 +62,14 @@ module PageHelper
 
   # Uno random de entre todos los archivos que hay en
   # assets/images/testimonials
+  # ATENCIÓN: Una vez compilado el sitio, esto no se llama más
   def random_testimonial_path
     testimonials = Dir.glob("assets/images/testimonials/*")
     testimonials.sample.gsub("assets/images/","")
+  end
+
+  def all_testimonial_paths
+    testimonials = Dir.glob("assets/images/testimonials/*")
+    testimonials.map{|t| t.gsub("assets/images/","")}
   end
 end
