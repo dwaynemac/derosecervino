@@ -1,0 +1,39 @@
+/* line 1, assets/stylesheets/bio.css.scss */
+body#bio-layout {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+/* line 4, assets/stylesheets/bio.css.scss */
+body#bio-layout header {
+  height: 20vh;
+}
+
+/* line 6, assets/stylesheets/bio.css.scss */
+body#bio-layout header #logo img {
+  margin-top: 3dvh;
+  max-height: 15dvh;
+}
+
+/* line 12, assets/stylesheets/bio.css.scss */
+body#bio-layout main .container {
+  min-height: 65dvh;
+}
+
+/* line 16, assets/stylesheets/bio.css.scss */
+body#bio-layout main #links .list-group-item {
+  background-color: var(--brand-brown);
+  color: var(--brand-white);
+  font-weight: bolder;
+}
+
+/* line 20, assets/stylesheets/bio.css.scss */
+body#bio-layout main #links .list-group-item a {
+  color: var(--brand-white);
+  text-decoration: none;
+}
+
+/* line 30, assets/stylesheets/bio.css.scss */
+body#bio-layout footer {
+  height: 10dvh;
+}
