@@ -1,0 +1,24 @@
+<%# @param valores [Array] %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr><th>Plan</th><th>Valor</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>1 clase</td><td><%= valores[0] %></td></tr>
+    <tr><td>Mensual (1 clase x semana)</td><td><%= valores[1] %></td></tr>
+    <tr><td>Mensual (2 clases x semana)</td><td><%= valores[2] %></td></tr>
+    <tr><td>Mensual (3 clases x semana)</td><td><%= valores[3] %></td></tr>
+    <tr><td>Mensual (4 clases x semana)</td><td><%= valores[4] %></td></tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="2" class="text-right">
+        +30% por persona extra<br>
+        +20% presencial a domicilio
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+
