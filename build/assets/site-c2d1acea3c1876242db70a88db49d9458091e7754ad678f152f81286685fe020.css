@@ -1,0 +1,155 @@
+/* line 1, assets/stylesheets/site.css.scss */
+:root {
+  --footer-height: 8vh;
+}
+
+/* line 4, assets/stylesheets/site.css.scss */
+main#main {
+  margin-top: calc(var(--navbar-height));
+  margin-bottom: calc(var(--footer-height));
+}
+
+/* line 9, assets/stylesheets/site.css.scss */
+#home-band-1 {
+  min-height: calc(100vh - var(--navbar-height) - 200px);
+}
+
+/* line 13, assets/stylesheets/site.css.scss */
+#home-drm {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* line 14, assets/stylesheets/site.css.scss */
+#home-drm:target {
+  padding-top: var(--navbar-height);
+}
+
+/* line 17, assets/stylesheets/site.css.scss */
+#home-drm .logo {
+  max-width: 300px;
+}
+
+/* line 24, assets/stylesheets/site.css.scss */
+#home-testimonials {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* line 27, assets/stylesheets/site.css.scss */
+#home-testimonials #img-estivi-webp {
+  max-width: 300px;
+}
+
+/* line 35, assets/stylesheets/site.css.scss */
+#home-presencial-y-online {
+  min-height: 60vh;
+}
+
+/* line 37, assets/stylesheets/site.css.scss */
+#home-presencial-y-online #online-y-presencial {
+  color: var(--brand-blue);
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+@media (max-width: 400px) {
+  /* line 37, assets/stylesheets/site.css.scss */
+  #home-presencial-y-online #online-y-presencial {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 400px) {
+  /* line 37, assets/stylesheets/site.css.scss */
+  #home-presencial-y-online #online-y-presencial {
+    font-size: 4rem;
+  }
+}
+
+/* line 48, assets/stylesheets/site.css.scss */
+#home-presencial-y-online .btn-cta {
+  margin-bottom: 3rem;
+}
+
+/* line 53, assets/stylesheets/site.css.scss */
+footer {
+  height: var(--footer-height);
+  background-color: var(--brand-blue);
+  padding-bottom: 4rem !important;
+}
+
+/* line 59, assets/stylesheets/site.css.scss */
+.bi.bi-whatsapp {
+  width: 2rem;
+}
+
+/* line 62, assets/stylesheets/site.css.scss */
+.bi.bi-instagram {
+  width: 2rem;
+}
+
+/* line 65, assets/stylesheets/site.css.scss */
+.bi.bi-geo-alt {
+  width: 2rem;
+}
+
+/* line 69, assets/stylesheets/site.css.scss */
+.white-icons .bi {
+  color: var(--brand-white);
+}
+
+/* line 74, assets/stylesheets/site.css.scss */
+.blue-icons .bi {
+  color: var(--brand-blue);
+}
+
+/* line 80, assets/stylesheets/site.css.scss */
+#goto-landing {
+  height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  color: var(--brand-blue);
+}
+
+/* line 86, assets/stylesheets/site.css.scss */
+#yoga .row:first-child {
+  max-height: calc(713px - 13px);
+}
+
+/* line 88, assets/stylesheets/site.css.scss */
+#yoga .row:first-child .col-sm-6:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 93, assets/stylesheets/site.css.scss */
+#yoga #foto-bachi {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* line 101, assets/stylesheets/site.css.scss */
+#contact-info h1 {
+  color: var(--brand-blue);
+}
+
+/* line 106, assets/stylesheets/site.css.scss */
+.btn-xl {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 3.5rem;
+  --bs-btn-font-size: 2rem;
+  --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+/* line 113, assets/stylesheets/site.css.scss */
+#error_404 {
+  color: var(--brand-blue);
+  min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+}
+
+/* line 118, assets/stylesheets/site.css.scss */
+.iframe-container {
+  background-image: url(/assets/loading-37fea8aee232ca033a84f5f7cda0eb8acee05583965cf2a461f3b7269f53e387.gif);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
