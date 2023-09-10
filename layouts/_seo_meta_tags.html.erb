@@ -3,6 +3,9 @@
 <meta property="og:site_name" content="DeROSE Method"/>
 <meta property="og:type" content="website"/>
 
+<% if (content = current_page.data.fetch("meta_robots", nil)) %>
+  <meta name="robots" content="<%= content %>"/>
+<% end %>
 <% if (content = current_page.data.fetch("meta_description", nil)) %>
   <meta property="og:description" content="<%= content %>"/>
   <meta name="description" content="<%= content %>"/>
