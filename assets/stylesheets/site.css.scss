@@ -114,3 +114,9 @@ footer {
   color: var(--brand-blue);
   min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
 }
+
+.iframe-container {
+  background-image: image-url("loading.gif");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
