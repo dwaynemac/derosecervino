@@ -120,3 +120,7 @@ footer {
   background-repeat: no-repeat;
   background-position-x: center;
 }
+
+.fill-between-bars {
+  height: calc(100vh - var(--navbar-height) - var(--footer-height));
+}
