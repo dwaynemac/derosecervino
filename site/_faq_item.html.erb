@@ -1,0 +1,25 @@
+<% show = false unless defined?(show) %>
+<% parent_id = "faq" unless defined?(parent_id) %>
+<% if defined?(@faq_item_count) %>
+  <% @faq_item_count += 1 %>
+<% else %>
+  <% @faq_item_count = 0 %>
+<% end %>
+<% id = "collapse#{@faq_item_count}" %>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button <%= "collapsed" unless show %>" type="button"
+            data-bs-toggle="collapse" data-bs-target="#<%= id %>"
+            aria-expanded="<%= show %>" aria-controls="<%= id %>">
+      <b>
+        <%== q %>
+      </b>
+    </button>
+  </h2>
+  <div id="<%= id %>" class="accordion-collapse collapse <%= "show" if show %>" data-bs-parent="#<%= parent_id %>">
+    <div class="accordion-body">
+      <%== a %>
+    </div>
+  </div>
+</div>

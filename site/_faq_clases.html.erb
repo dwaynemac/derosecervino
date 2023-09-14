@@ -1,0 +1,30 @@
+<div class="accordion pt-4" id="faq-clases">
+
+  <%= render "faq_item", {
+    parent_id: "faq-clases",
+    q: "¿Cuántas personas hay en cada clase presencial?",
+    a: <<-A
+<p>
+  Trabajamos con <b>grupos pequeños</b> para que el profesor pueda dar una atención personalizada a cada alumno. Las clases tienen un límite de vacantes y se recomienda reservar con anticipación.
+  <br>
+  En la mayor parte de las actividades el número máximo de alumnos es de 8 personas.
+</p>
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-clases",
+    q: "¿Tengo que elegir un horario fijo?",
+    a: <<-A
+  <p>
+    No. <br>
+    A través de nuestra plataforma vas a poder reservar tus clases y administrar tu cuenta.
+    En la app verás todas las clases disponibles y <b>podrás reservar en los horarios que prefieras.</b>
+  </p>
+  <p>
+    Además en encontraras <b>artículos</b>, <b>clases grabadas</b> para que puedas hacer en cualquier momento y el acceso a las <b>clases en vivo</b> para aprovechar durante viajes o cuando no puedas asistir a la escuela.
+  </p>
+A
+  } %>
+
+
+</div>

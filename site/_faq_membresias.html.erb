@@ -1,0 +1,70 @@
+<div class="accordion pt-4" id="faq-membresias">
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
+    q: "Quiero empezar pero ya estamos a mitad de mes, ¿tengo que esperar al mes que viene?",
+    a: <<-A
+<p>
+  ¡Empezá cuando quieras! El cobro de la suscripción se irá haciendo cada mes la misma fecha en que te suscribiste.
+</p>
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
+    q: "¿Cómo funcionan los límites de reservas por mes?",
+    a: <<-A
+  <p>
+    En lugar de "veces por semana" las membresías tienen una cantidad de reservas mensuales.
+    Esto permite que si una semana no pudiste asistir a tu clase tengas tu reserva disponible otra semana.
+  </p>
+  <p>
+    Las reservas son válidas durante 1 mes después del pago de tu suscripción y no se acumulan.
+  </p>
+  <p>
+    Si hiciste reserva en una clase y no vas a poder participar te pedimos que la canceles para que otra persona pueda asistir. <br>
+    <b>Las reservas no canceladas o canceladas después del horario límite son consideradas como usadas.</b>
+  </p>
+  <p>
+    Hay muchas actividades (por ejemplo algunas charlas teóricas) cuya reserva no se descuenta de tu límite mensual. Vas a ver un mensaje que identifica estas clases a la hora de hacer tu reserva.
+  </p>
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
+    q: "¿Qué pasa si quiero cancelar mi suscripción?",
+    a: <<-A
+  <p>
+    Podés cancelar tu suscripción en cualquier momento! La plataforma mantiene tu acceso a los contenidos y actividades hasta finalizar el período de tu último pago.
+  </p>
+  <p>
+    Estando en argentina actualizamos los valores de lista todos los meses 😅 pero vamos demorando los aumentos para los miembros activos. Si cancelás tu suscripción y querés volver a suscribirte, vas a tener que abonar el valor de lista vigente al momento de tu nueva suscripción.
+  </p>
+  <p>
+    Si lo que querés es pausar tu suscripción, podés optar por abonar durante ese mes la membresía ON-DEMAND y seguir aprovechando de las clases online!
+  </p>
+
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
+    q: "¿Puedo pausar mi suscripción durante un viaje?",
+    a: <<-A
+<p>
+Para mantener el valor de tu membresía, durante viajes o períodos en los que no podés asistir a las clases en vivo, podrás optar por abonar durante ese mes la membresía ON-DEMAND y seguir aprovechando de las clases online!
+</p>
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
+    q: "¿Puedo pagar en efectivo?",
+    a: <<-A
+  <p>
+    Preferimos las suscripciones con tarjeta de crédito o débito que facilitan la administración de la plataforma pero también podés hacerlo en efectivo.
+  </p>
+  <p>
+    En este caso considerá que el pago se hace siempre por adelantado hasta el día 5 de cada mes y
+    en caso de interrumpir el pago consecutivo mensual, el valor de la membresía se actualiza al precio de lista vigente.
+  </p>
+A
+  } %>
+
+</div>
