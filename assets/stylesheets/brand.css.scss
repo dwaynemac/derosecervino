@@ -14,8 +14,41 @@
   }
 }
 
+h1, h2 {
+  font-family: Sanomat;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+p {
+  font-family: "Scto Grotesck A";
+}
+
 .derose_brand {
   .smallcaps {
     font-variant: small-caps;
   }
 }
+
+// para titulos
+@font-face {
+  font-family: "Sanomat";
+  src: font_url("Sanomat-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sanomat";
+  src: font_url("Sanomat-Light-Italic.otf") format("opentype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Scto Grotesck A";
+  src: font_url("Scto-Grotesk-A-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
