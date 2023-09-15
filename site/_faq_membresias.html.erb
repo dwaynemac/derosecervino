@@ -1,6 +1,15 @@
 <div class="accordion pt-4" id="faq-membresias">
   <%= render "faq_item", {
     parent_id: "faq-membresias",
+    q: "¿Qué opciones de membresías hay?",
+    a: <<-A
+  <p>
+    Encontras todas las opciones de membresías en la sección <a href="/pricing">Plans</a>.
+  </p>
+A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-membresias",
     q: "Quiero empezar pero ya estamos a mitad de mes, ¿tengo que esperar al mes que viene?",
     a: <<-A
 <p>
