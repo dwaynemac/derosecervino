@@ -1,0 +1,43 @@
+<div class="col">
+  <%= render "learn_subscription", {
+    currency: "usd",
+  url: "https://learn.derose.app/a/cervino/subscribe_to/only-ondemand-usd.json"
+} do %>
+  <ul>
+    <li><%= image_tag "check-lg.svg", class: "icon" %>Clases grabadas para ver a tu ritmo en cualquier horario</li>
+    <li><%= image_tag "check-lg.svg", class: "icon" %>4 clases interactivas en vivo para orientación inicial si es tu primera vez</li>
+    <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Clases interactivas en vivo</li>
+    <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Clases presenciales incluidas*</li>
+    <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Acompañamiento personalizado por un profesional certificado</li>
+    <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Pasaporte DeROSE Network global</li>
+  </ul>
+<% end %>
+</div>
+<div class="col">
+  <%= render "learn_subscription", {
+    currency: "usd",
+    url: "https://learn.derose.app/a/cervino/subscribe_to/only-live-usd.json"
+  } do %>
+    <ul>
+      <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Clases grabadas para ver a tu ritmo en cualquier horario</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Clases interactivas en vivo</li>
+      <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Clases presenciales incluidas*</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Acompañamiento personalizado por un profesional certificado</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Pasaporte DeROSE Network global</li>
+    </ul>
+  <% end %>
+</div>
+<div class="col">
+  <%= render "learn_subscription", {
+    currency: "usd",
+    url: "https://learn.derose.app/a/cervino/subscribe_to/full-online-usd.json"
+  } do %>
+    <ul>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Clases grabadas para ver a tu ritmo en cualquier horario</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Clases interactivas en vivo</li>
+      <li class="text-muted"><%= image_tag "x-lg.svg", class: "icon" %>Clases presenciales incluidas*</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Acompañamiento personalizado por un profesional certificado</li>
+      <li class=""><%= image_tag "check-lg.svg", class: "icon" %>Pasaporte DeROSE Network global</li>
+    </ul>
+  <% end %>
+</div>
