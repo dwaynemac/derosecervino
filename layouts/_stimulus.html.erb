@@ -68,4 +68,26 @@
     }
   })
 
+  Stimulus.register("authorizer", class extends Controller {
+
+    static values = {name: String, val: String}
+    static targets = ["authorized", "unauthorized"]
+
+    connect(){
+      console.log("authorizer connected")
+      if (this.isAuthorized()) {
+        console.log("authorized")
+        this.authorizedTarget.classList.remove('d-none')
+      } else {
+        console.log("unauthorized")
+        this.unauthorizedTarget.classList.remove('d-none')
+      }
+    }
+
+    isAuthorized(){
+      let params = new URLSearchParams(window.location.search);
+      return params.get(this.nameValue) === this.valValue
+    }
+  })
+
 </script>

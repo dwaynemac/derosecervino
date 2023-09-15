@@ -1,3 +1,5 @@
+<% auth_var_name = nil unless defined?(auth_var_name) %>
+<% auth_var_value = nil unless defined?(auth_var_value) %>
 <div class="card mb-5 mb-lg-0"
      data-controller="learn-subscription"
      data-learn-subscription-url-value="<%= url %>"
@@ -8,7 +10,17 @@
     <hr>
     <%= yield %>
     <div class="text-center">
-      <a data-learn-subscription-target="payButton" href="" target="_blank" class="btn-cta btn text-uppercase">quiero este plan</a>
+      <% if auth_var_name %>
+        <div data-controller="authorizer"
+             data-authorizer-name-value="<%= auth_var_name %>"
+             data-authorizer-val-value="<%= auth_var_value %>"
+        >
+          <a data-authorizer-target="unauthorized" href="mailto:cervino@derosemethod.org" target="_blank" class="d-none btn-cta btn text-uppercase">Consultar disponibilidad</a>
+          <a data-authorizer-target="authorized" data-learn-subscription-target="payButton" href="" target="_blank" class="d-none btn-cta btn text-uppercase">quiero este plan</a>
+        </div>
+      <% else %>
+        <a data-learn-subscription-target="payButton" href="" target="_blank" class="btn-cta btn text-uppercase">quiero este plan</a>
+      <% end %>
     </div>
   </div>
 </div>
