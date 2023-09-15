@@ -1,7 +1,34 @@
 ---
 title: Pricing
 text: Encontrá todas las opciones de planes en nuestra plataforma
-cta_text: Ver planes
-cta_url: https://learn.derose.app/l/cervino-pricing
 ---
-<%= render "site/goto-landing" %>
+<div class="pricing container pt-4 font-brand-body">
+  <ul class="nav nav-underline">
+    <li class="nav-item ms-auto" role="presentation">
+      <button class="nav-link" id="planes-online-tab" data-bs-toggle="tab" data-bs-target="#planes-online" type="button" role="tab" aria-controls="home" aria-selected="true">Planes online</button>
+    </li>
+    <li class="nav-item me-auto" role="presentation">
+      <button class="nav-link active" id="planes-presenciales-tab" data-bs-toggle="tab" data-bs-target="#planes-presenciales" type="button" role="tab" aria-controls="profile" aria-selected="false">Planes presenciales</button>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" id="planes-online" role="tabpanel" tabindex="0">
+      <div class="row">
+        <%= render "site/pricing/planes_online" %>
+        <div class="w-100 text-center mt-4">
+          *válidas durante 30 días. Podés sumar clases adicionales por $<span data-controller="learn-amount" data-learn-amount-url-value="https://learn.derose.app/a/cervino/pay/clase-suelta.json"></span> la clase.
+          <a href="mailto:cervino@derosemethod.org" target="_blank">Consultá disponiblidad.</a>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane active" id="planes-presenciales" role="tabpanel" tabindex="1">
+      <div class="row">
+        <%= render "site/pricing/planes_presenciales" %>
+        <div class="w-100 text-center mt-4">
+          *válidas durante 30 días. Podés sumar clases adicionales por $<span data-controller="learn-amount" data-learn-amount-url-value="https://learn.derose.app/a/cervino/pay/clase-suelta.json"></span> la clase.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

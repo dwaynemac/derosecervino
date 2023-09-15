@@ -1,0 +1,14 @@
+<div class="card mb-5 mb-lg-0"
+     data-controller="learn-subscription"
+     data-learn-subscription-url-value="<%= url %>"
+>
+  <div class="card-body">
+    <h5 class="card-title text-muted text-uppercase text-center"><span data-learn-subscription-target="name"></span></h5>
+    <h6 class="card-price text-center text-nowrap"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <hr>
+    <%= yield %>
+    <div class="text-center">
+      <a data-learn-subscription-target="payButton" href="" target="_blank" class="btn-cta btn text-uppercase">quiero este plan</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul {
+  list-style-type: none;
+}
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+.pricing .text-muted {
+  .icon {
+    opacity: 0.5;
+  }
+  opacity: 0.5;
+}
+.pricing li .icon {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.pricing .btn-cta {
+  color: var(--brand-white) !important;
+}
+.pricing .btn-cta:hover {
+  color: var(--brand-brown) !important;
+  border-color: var(--brand-blue) !important;
+}
+
+/* Hover Effects on Card */
+
+.pricing .card:hover {
+  margin-top: -.25rem;
+  margin-bottom: .25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.pricing .card:hover .btn {
+  opacity: 1;
+}

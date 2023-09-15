@@ -28,4 +28,42 @@
       item.classList.remove('d-none')
     }
   })
+
+  Stimulus.register("learn-amount", class extends Controller {
+    static values = { url: String }
+
+    connect() {
+      console.log("learn-subscription connected")
+      this.renderValue()
+    }
+
+    renderValue(){
+      fetch(this.urlValue)
+        .then(response => response.json())
+        .then(data => {
+          this.element.innerText = data.amount_cents / 100
+        })
+    }
+  })
+
+  Stimulus.register("learn-subscription", class extends Controller {
+    static values = { url: String }
+    static targets = ["name", "amount", "payButton"]
+
+    connect() {
+      console.log("learn-subscription connected")
+      this.renderValue()
+    }
+
+    renderValue(){
+      fetch(this.urlValue)
+        .then(response => response.json())
+        .then(data => {
+          this.nameTarget.innerText = data.name
+          this.amountTarget.innerText = data.amount_cents / 100
+          this.payButtonTarget.href = this.urlValue.replace(".json", "")
+        })
+    }
+  })
+
 </script>
