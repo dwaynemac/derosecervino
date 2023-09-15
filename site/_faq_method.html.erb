@@ -1,6 +1,23 @@
 <div class="accordion pt-4" id="faq-method">
   <%= render "faq_item", {
     parent_id: "faq-method",
+    q: "¿Qué es #{derose_brand} Method?",
+    a: <<-A
+<p>
+  DeRose Method te ofrece herramientas para que desarrolles las habilidades y comportamientos necesarios para vivir bien y prosperar en un mundo de exigencias y desafíos crecientes.
+</p>
+<p>
+Comenzás aprendiendo sobre todo técnicas respiratorias y corporales para desarrollar más la fuerza y tono muscular, flexibilidad y concentración.
+<br>
+Al ir avanzando podés ir sumándote a charlas, cursos y otras actividades que abarcan el resto del Método #{derose_brand}: hábitos, alimentación, comportamiento, relaciones humanas y más.
+</p>
+<p>
+  Para más detalles te recomendamos visitar el sitio global oficial: #{link_to("#{derose_brand}Method.org".html_safe, "https://derosemethod.org/es", target: "_blank").html_safe}
+</p>
+  A
+  } %>
+  <%= render "faq_item", {
+    parent_id: "faq-method",
     q: "¿Es yoga?",
     a: <<-A
   <p>

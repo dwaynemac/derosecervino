@@ -8,17 +8,18 @@
 <% id = "collapse#{@faq_item_count}" %>
 
 <div class="accordion-item">
-  <h2 class="accordion-header">
+  <h3 class="accordion-header">
     <button class="accordion-button <%= "collapsed" unless show %>" type="button"
+            style="color: var(--brand-blue)"
             data-bs-toggle="collapse" data-bs-target="#<%= id %>"
             aria-expanded="<%= show %>" aria-controls="<%= id %>">
       <b>
         <%== q %>
       </b>
     </button>
-  </h2>
+  </h3>
   <div id="<%= id %>" class="accordion-collapse collapse <%= "show" if show %>" data-bs-parent="#<%= parent_id %>">
-    <div class="accordion-body">
+    <div class="accordion-body text-start bg-brand-white">
       <%== a %>
     </div>
   </div>
