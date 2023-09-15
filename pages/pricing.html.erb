@@ -17,6 +17,13 @@ text: Encontrá todas las opciones de planes en nuestra plataforma
   <div class="tab-content">
     <div class="tab-pane" id="planes-online" role="tabpanel" tabindex="0">
       <div class="row">
+        <div class="container mt-1">
+          <p class="text-center">
+            <small>
+              <%= link_to "ver valores en USD", "/pricing-usd" %>
+            </small>
+          </p>
+        </div>
         <%= render "site/pricing/planes_online" %>
         <div class="w-100 text-center mt-4">
           *válidas durante 30 días. Podés sumar clases adicionales por $<span data-controller="learn-amount" data-learn-amount-url-value="https://learn.derose.app/a/cervino/pay/clase-suelta.json"></span> la clase.
