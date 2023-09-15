@@ -124,3 +124,9 @@ footer {
 .fill-between-bars {
   height: calc(100vh - var(--navbar-height) - var(--footer-height));
 }
+
+table#private-teacher-pricing {
+  th, td {
+    color: var(--brand-blue)
+  }
+}
