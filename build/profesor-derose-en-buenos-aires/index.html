@@ -64,7 +64,7 @@
       fetch(this.urlValue)
         .then(response => response.json())
         .then(data => {
-          this.element.innerText = data.amount_cents / 100
+          this.element.innerText = (data.amount_cents / 100).toLocaleString("es-AR")
         })
     }
   })
@@ -83,7 +83,7 @@
         .then(response => response.json())
         .then(data => {
           this.nameTarget.innerText = data.name
-          this.amountTarget.innerText = data.amount_cents / 100
+          this.amountTarget.innerText = (data.amount_cents / 100).toLocaleString("es-AR")
           if (this.hasPayButtonTarget){
             this.payButtonTarget.href = this.urlValue.replace(".json", "")
           }
