@@ -1,0 +1,60 @@
+/* line 1, assets/stylesheets/bgs.css.scss */
+.bg-brand-blue {
+  background: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+/* line 6, assets/stylesheets/bgs.css.scss */
+.bg-brand-white {
+  color: var(--brand-blue);
+  background: var(--brand-white);
+}
+
+/* line 11, assets/stylesheets/bgs.css.scss */
+.bg-brand-brown {
+  background: var(--brand-brown);
+  color: var(--brand-white);
+}
+
+/* line 16, assets/stylesheets/bgs.css.scss */
+.bg-translucent-white {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 20, assets/stylesheets/bgs.css.scss */
+.bg-fran-focus {
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-image: url(/assets/fotos/bg-fran-focus-d78aef45f7de366db624baab59d4e43e317fed4313f6fd8de0d4250e90ec2f71.webp);
+  background-size: cover;
+}
+
+/* line 28, assets/stylesheets/bgs.css.scss */
+.bg-grupo-en-puente {
+  background-image: url(/assets/fotos/bg-grupo-en-puente-cf1f0f292ae9d26d1ac9f84197fc3e76565bedc677e11fbd74275f5fa617540c.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 36, assets/stylesheets/bgs.css.scss */
+.bg-lu-y-mateo {
+  background-image: url(/assets/fotos/bg-lu-y-mateo-a90e7199563f080ad83f1e304d74cc74a4ccde429c9298c94b63dabde4c6288e.webp);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 45, assets/stylesheets/bgs.css.scss */
+.bg-fran-y-chica {
+  background-image: url(/assets/fotos/og-image-7261c6178df5c07d71e1ebce15c3724475e1eab0680e40a3971e8d664a7c298f.jpg);
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
