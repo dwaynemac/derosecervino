@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://mcusercontent.com/b5ad74c6d5f86064c163b699b/images/7f47cb7b-9c1f-bbe3-c76f-88f60995a8ca.png"/>
 
 
-    <link rel="stylesheet" href="/assets/brand-db604cca65d0875545b8099277aa6134b14dc803f20ec173e6f6cb44ca560815.css" media="screen" />
+    <link rel="stylesheet" href="/assets/brand-7b51c59215f564f9358b488ecb96f77479ca66d8c3c31ce65898af75d9254831.css" media="screen" />
     <link rel="stylesheet" href="/assets/bgs-d62d188931e7d0b3601d17463ade0d874025598e86b2faa632d71f40d4490858.css" media="screen" />
 
     <!-- Bootstrap 5.3.0-alpha3 -->
@@ -51,11 +51,74 @@
       item.classList.remove('d-none')
     }
   })
+
+  Stimulus.register("learn-amount", class extends Controller {
+    static values = { url: String }
+
+    connect() {
+      console.log("learn-subscription connected")
+      this.renderValue()
+    }
+
+    renderValue(){
+      fetch(this.urlValue)
+        .then(response => response.json())
+        .then(data => {
+          this.element.innerText = data.amount_cents / 100
+        })
+    }
+  })
+
+  Stimulus.register("learn-subscription", class extends Controller {
+    static values = { url: String }
+    static targets = ["name", "amount", "payButton"]
+
+    connect() {
+      console.log("learn-subscription connected")
+      this.renderValue()
+    }
+
+    renderValue(){
+      fetch(this.urlValue)
+        .then(response => response.json())
+        .then(data => {
+          this.nameTarget.innerText = data.name
+          this.amountTarget.innerText = data.amount_cents / 100
+          if (this.hasPayButtonTarget){
+            this.payButtonTarget.href = this.urlValue.replace(".json", "")
+          }
+        })
+    }
+  })
+
+  Stimulus.register("authorizer", class extends Controller {
+
+    static values = {name: String, val: String}
+    static targets = ["authorized", "unauthorized"]
+
+    connect(){
+      console.log("authorizer connected")
+      if (this.isAuthorized()) {
+        console.log("authorized")
+        this.authorizedTarget.classList.remove('d-none')
+      } else {
+        console.log("unauthorized")
+        this.unauthorizedTarget.classList.remove('d-none')
+      }
+    }
+
+    isAuthorized(){
+      let params = new URLSearchParams(window.location.search);
+      return params.get(this.nameValue) === this.valValue
+    }
+  })
+
 </script>
 
 
     <link rel="stylesheet" href="/assets/navbar-42f3b028926bad5656c98cbe4574ae54ea51615e03c82507668ba67c2cd96aae.css" media="screen" />
     <link rel="stylesheet" href="/assets/site-fcb785a0526bd0f799e2aded3b6f6cd6afeb42ea46ac1f12fbd108cc9f0332b7.css" media="screen" />
+    <link rel="stylesheet" href="/assets/pricing-4769433fe6b77832cd102597cf60f21206ae10d79a6e9fd0237ce305ed3f8d71.css" media="screen" />
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42"></script>
