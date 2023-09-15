@@ -7,8 +7,11 @@ text: Encontrá todas las opciones de planes en nuestra plataforma
     <li class="nav-item ms-auto" role="presentation">
       <button class="nav-link" id="planes-online-tab" data-bs-toggle="tab" data-bs-target="#planes-online" type="button" role="tab" aria-controls="home" aria-selected="true">Planes online</button>
     </li>
-    <li class="nav-item me-auto" role="presentation">
+    <li class="nav-item" role="presentation">
       <button class="nav-link active" id="planes-presenciales-tab" data-bs-toggle="tab" data-bs-target="#planes-presenciales" type="button" role="tab" aria-controls="profile" aria-selected="false">Planes presenciales</button>
+    </li>
+    <li class="nav-item me-auto" role="presentation">
+      <button class="nav-link" id="planes-estudiantes-tab" data-bs-toggle="tab" data-bs-target="#planes-estudiantes" type="button" role="tab" aria-controls="profile" aria-selected="false">Planes Estudiantes</button>
     </li>
   </ul>
   <div class="tab-content">
@@ -29,6 +32,14 @@ text: Encontrá todas las opciones de planes en nuestra plataforma
         </div>
       </div>
     </div>
+    <div class="tab-pane" id="planes-estudiantes" role="tabpanel" tabindex="2">
+      <div class="row">
+        <div class="w-100 text-center">
+          <p>¿Estas estudiando? ¡Este es el mejor momento para empezar <%= derose_brand %> Method! Te ayudamos con planes especiales para vos. </p>
+          <p><small><i>Planes para estudiantes de cualquier nivel, menores de 26 años.</i></small></p>
+        </div>
+        <%= render "site/pricing/planes_estudiantes" %>
+      </div>
+    </div>
   </div>
-
 </div>

@@ -61,7 +61,9 @@
         .then(data => {
           this.nameTarget.innerText = data.name
           this.amountTarget.innerText = data.amount_cents / 100
-          this.payButtonTarget.href = this.urlValue.replace(".json", "")
+          if (this.hasPayButtonTarget){
+            this.payButtonTarget.href = this.urlValue.replace(".json", "")
+          }
         })
     }
   })
