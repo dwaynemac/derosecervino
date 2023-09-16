@@ -5,12 +5,14 @@
 }
 
 .btn-cta {
+  color: var(--brand-white) !important;
   background-color: var(--brand-brown) !important;
   border-color: var(--brand-brown) !important;
   &:hover {
     background-color: var(--brand-white) !important;
-    border-color: var(--brand-white) !important;
-    color: var(--brand-brown) !important;
+    border-color: var(--brand-brown) !important;
+    border-width: 3px;
+    color: #000 !important;
   }
 }
 
