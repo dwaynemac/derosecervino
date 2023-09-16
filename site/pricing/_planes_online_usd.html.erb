@@ -1,4 +1,4 @@
-<div class="col-md">
+<div class="col-md order-md-1">
   <%= render "learn_subscription", {
     currency: "usd",
   url: "https://learn.derose.app/a/cervino/subscribe_to/only-ondemand-usd.json"
@@ -13,7 +13,7 @@
   </ul>
 <% end %>
 </div>
-<div class="col-md">
+<div class="col-md order-first order-md-2">
   <%= render "learn_subscription", {
     currency: "usd",
     url: "https://learn.derose.app/a/cervino/subscribe_to/only-live-usd.json"
@@ -27,7 +27,7 @@
     </ul>
   <% end %>
 </div>
-<div class="col-md">
+<div class="col-md order-md-3">
   <%= render "learn_subscription", {
     currency: "usd",
     url: "https://learn.derose.app/a/cervino/subscribe_to/full-online-usd.json"
