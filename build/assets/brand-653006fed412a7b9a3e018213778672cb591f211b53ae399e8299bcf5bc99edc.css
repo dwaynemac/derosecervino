@@ -1,0 +1,71 @@
+/* line 1, assets/stylesheets/brand.css.scss */
+:root {
+  --brand-blue: #040e85;
+  --brand-white: #fff;
+  --brand-brown: #c69c6c;
+}
+
+/* line 7, assets/stylesheets/brand.css.scss */
+.btn-cta {
+  background-color: var(--brand-brown) !important;
+  border-color: var(--brand-brown) !important;
+}
+
+/* line 10, assets/stylesheets/brand.css.scss */
+.btn-cta:hover {
+  background-color: var(--brand-white) !important;
+  border-color: var(--brand-white) !important;
+  color: var(--brand-brown) !important;
+}
+
+/* line 17, assets/stylesheets/brand.css.scss */
+h1, h2, .font-brand-title {
+  font-family: Sanomat;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* line 23, assets/stylesheets/brand.css.scss */
+p, .font-brand-body {
+  font-family: "Scto Grotesck A", sans-serif;
+}
+
+/* line 28, assets/stylesheets/brand.css.scss */
+.derose_brand .smallcaps {
+  font-variant: small-caps;
+}
+
+@font-face {
+  font-family: "Sanomat";
+  src: url(/fonts/Sanomat-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sanomat";
+  src: url(/assets/Sanomat-Light-Italic-ee9ac2bc7129d2c349d20f96b4f605e83c67b67329054ef8374272cb0554840b.otf) format("opentype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Scto Grotesck A";
+  src: url(/assets/Scto-Grotesk-A-Regular-2d32ee567ddca7f5aae59337d6e2034ac086c1db1981b2f4326ae9b453b5e7cb.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Scto Grotesck A";
+  src: url(/assets/Scto-Grotesk-A-Light-3b52d298446a51d6aa2d24ba6f91b0f8f9f41c99f00d4bfeb8bc0dd30b556b26.otf) format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Scto Grotesck A";
+  src: url(/assets/Scto-Grotesk-A-Bold-18f14e1489bfb67b3c31d5856d637dd53f05c500a841431f8767f7e0a7ac371c.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
