@@ -60,6 +60,14 @@ module PageHelper
     "https://www.derosemethod.org/es"
   end
 
+  def learn_host
+    if Rails.env.development?
+      "http://localhost:3031"
+    else
+      "https://learn.derose.app"
+    end
+  end
+
   # Uno random de entre todos los archivos que hay en
   # assets/images/testimonials
   # ATENCIÓN: Una vez compilado el sitio, esto no se llama más

@@ -1,0 +1,51 @@
+<div class="pricing container pt-4 font-brand-body bg-brand-white">
+  <ul class="nav nav-underline">
+    <li class="nav-item ms-auto" role="presentation">
+      <button class="nav-link" id="planes-online-tab" data-bs-toggle="tab" data-bs-target="#planes-online" type="button" role="tab" aria-controls="home" aria-selected="true">Planes online</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="planes-presenciales-tab" data-bs-toggle="tab" data-bs-target="#planes-presenciales" type="button" role="tab" aria-controls="profile" aria-selected="false">Planes presenciales</button>
+    </li>
+    <li class="nav-item me-auto" role="presentation">
+      <button class="nav-link" id="planes-estudiantes-tab" data-bs-toggle="tab" data-bs-target="#planes-estudiantes" type="button" role="tab" aria-controls="profile" aria-selected="false">Planes Estudiantes</button>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" id="planes-online" role="tabpanel" tabindex="0">
+      <div class="row">
+        <div class="container mt-1">
+          <p class="text-center">
+            <small>
+              <%= link_to "ver valores en USD", "/pricing-usd" %>
+            </small>
+          </p>
+        </div>
+        <%= render "site/pricing/planes_online" %>
+      </div>
+      <div class="pb-4">
+        <%= render "site/pricing/asterisk" %>
+      </div>
+    </div>
+    <div class="tab-pane active" id="planes-presenciales" role="tabpanel" tabindex="1">
+      <div class="row">
+        <%= render "site/pricing/planes_presenciales" %>
+      </div>
+      <div class="pb-4">
+        <%= render "site/pricing/asterisk" %>
+      </div>
+    </div>
+    <div class="tab-pane" id="planes-estudiantes" role="tabpanel" tabindex="2">
+      <div class="row">
+        <div class="col">
+          <div class="w-100 text-center">
+            <p>¿Estas estudiando? ¡Este es el mejor momento para empezar <%= derose_brand %> Method! Te ayudamos con planes especiales para vos. </p>
+            <p><small><i>Planes para estudiantes de cualquier nivel, menores de 26 años.</i></small></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <%= render "site/pricing/planes_estudiantes" %>
+      </div>
+    </div>
+  </div>
+</div>
