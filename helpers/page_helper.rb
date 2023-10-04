@@ -61,11 +61,11 @@ module PageHelper
   end
 
   def learn_host
-    if Rails.env.development?
-      "http://localhost:3031"
-    else
+    #if Rails.env.development?
+      #"http://localhost:3031"
+    #else
       "https://learn.derose.app"
-    end
+    #end
   end
 
   # Uno random de entre todos los archivos que hay en
