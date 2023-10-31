@@ -23,7 +23,6 @@ h1, h2, .font-brand-title {
 }
 
 p, .font-brand-body {
-  font-family: "Scto Grotesck A", sans-serif;
 }
 
 .derose_brand {
@@ -46,25 +45,3 @@ p, .font-brand-body {
   font-weight: lighter;
   font-style: italic;
 }
-
-@font-face {
-  font-family: "Scto Grotesck A";
-  src: font_url("Scto-Grotesk-A-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Scto Grotesck A";
-  src: font_url("Scto-Grotesk-A-Light.otf") format("opentype");
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Scto Grotesck A";
-  src: font_url("Scto-Grotesk-A-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
