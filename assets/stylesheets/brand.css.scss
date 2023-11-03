@@ -17,7 +17,7 @@
 }
 
 h1, h2, .font-brand-title {
-  font-family: Sanomat;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: lighter;
   font-style: italic;
 }
@@ -29,19 +29,4 @@ p, .font-brand-body {
   .smallcaps {
     font-variant: small-caps;
   }
-}
-
-// para titulos
-@font-face {
-  font-family: "Sanomat";
-  src: font_url("Sanomat-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Sanomat";
-  src: font_url("Sanomat-Light-Italic.otf") format("opentype");
-  font-weight: lighter;
-  font-style: italic;
 }
