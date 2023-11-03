@@ -17,7 +17,7 @@
 }
 
 h1, h2, .font-brand-title {
-  font-family: Sanomat;
+  font-family: 'Sanomat Web';
   font-weight: lighter;
   font-style: italic;
 }
@@ -34,15 +34,15 @@ p, .font-brand-body {
 
 // para titulos
 @font-face {
-  font-family: "Sanomat";
-  src: font_url("Sanomat-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Sanomat Web';
+  src: url('Sanomat-LightItalic-Web.woff2') format('woff2'),
+  url('Sanomat-LightItalic-Web.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
 }
 
-@font-face {
-  font-family: "Sanomat";
-  src: font_url("Sanomat-Light-Italic.otf") format("opentype");
-  font-weight: lighter;
+.Sanomat-LightItalic-Web {
+  font-family: 'Sanomat Web';
+  font-weight: 300;
   font-style: italic;
 }
