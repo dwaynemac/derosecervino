@@ -2,6 +2,10 @@
   --brand-blue: #040e85;
   --brand-white: #fff;
   --brand-brown: #c69c6c;
+
+  --brand-body-font-family: "Helvetica", sans-serif;
+  // piso la definición de Bootstrap
+  --bs-body-font-family: var(--brand-body-font-family) !important;
 }
 
 .btn-cta {
@@ -20,9 +24,6 @@ h1, h2, .font-brand-title {
   font-family: 'Sanomat Web';
   font-weight: lighter;
   font-style: italic;
-}
-
-p, .font-brand-body {
 }
 
 // @example <span class='derose_brand'>De<span class='smallcaps'>Rose</span></span>
