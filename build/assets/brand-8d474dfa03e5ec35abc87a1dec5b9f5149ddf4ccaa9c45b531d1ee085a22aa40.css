@@ -1,0 +1,48 @@
+/* line 1, assets/stylesheets/brand.css.scss */
+:root {
+  --brand-blue: #040e85;
+  --brand-white: #fff;
+  --brand-brown: #c69c6c;
+  --bs-body-font-family: "Helvetica", sans-serif;
+}
+
+/* line 10, assets/stylesheets/brand.css.scss */
+.btn-cta {
+  color: var(--brand-white) !important;
+  background-color: var(--brand-brown) !important;
+  border-color: var(--brand-brown) !important;
+}
+
+/* line 14, assets/stylesheets/brand.css.scss */
+.btn-cta:hover {
+  background-color: var(--brand-white) !important;
+  border-color: var(--brand-brown) !important;
+  border-width: 3px;
+  color: #000 !important;
+}
+
+/* line 22, assets/stylesheets/brand.css.scss */
+h1, h2, .font-brand-title {
+  font-family: 'Sanomat Web';
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* line 30, assets/stylesheets/brand.css.scss */
+.derose_brand .smallcaps {
+  font-variant: small-caps;
+}
+
+@font-face {
+  font-family: 'Sanomat Web';
+  src: url(/assets/Sanomat-LightItalic-Web-5fe4dc585255c26089bb1b1fb310b3752d87fbc1cfdc8706f68e34a170fc0dc9.woff2) format("woff2"), url(/assets/Sanomat-LightItalic-Web-a375034ddf08f5b159d21dc447670ad1b94905e5125caf50080ba506a8b1d999.woff) format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* line 44, assets/stylesheets/brand.css.scss */
+.Sanomat-LightItalic-Web {
+  font-family: 'Sanomat Web';
+  font-weight: 300;
+  font-style: italic;
+}
