@@ -29,11 +29,12 @@
     }
   })
 
+  // Para mostrar únicamente el valor
   Stimulus.register("learn-amount", class extends Controller {
     static values = { url: String }
 
     connect() {
-      console.log("learn-subscription connected")
+      console.log("learn-amount connected")
       this.renderValue()
     }
 
@@ -46,6 +47,7 @@
     }
   })
 
+  // Para mostrar el nombre, el valor y linkear al pago
   Stimulus.register("learn-subscription", class extends Controller {
     static values = { url: String }
     static targets = ["name", "amount", "payButton"]
