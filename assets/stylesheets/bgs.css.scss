@@ -25,6 +25,32 @@
   background-size: cover;
 }
 
+.bg-kakasana-guti {
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-image: image-url('fotos/kakasana-en-gutierrez.jpeg');
+  background-size: cover;
+}
+
+.bg-asana-home {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // on mobile
+  @media (max-width: 600px) {
+    background-image: image-url('fotos/ekapadachakrasana-guti.jpeg');
+    background-position-x: center;
+    background-position-y: center;
+  }
+  // on desktop
+  @media (min-width: 600px) {
+    background-image: image-url('fotos/bg-fran-focus.webp');
+    background-position-x: center;
+    background-position-y: top;
+  }
+}
+
 .bg-grupo-en-puente {
   background-image: image-url('fotos/bg-grupo-en-puente.jpeg');
   background-position-x: center;

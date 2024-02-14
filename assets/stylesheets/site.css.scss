@@ -6,8 +6,15 @@ main#main {
   margin-bottom: calc(var(--footer-height));
 }
 
+#home-band-0 {
+  .carousel-item {
+    min-height: calc(100vh - var(--navbar-height) - 200px);
+  }
+}
+
 #home-band-1 {
-  min-height: calc(100vh - var(--navbar-height) - 200px);
+  display: none !important;
+  //min-height: calc(100vh - var(--navbar-height) - 200px);
 }
 
 #home-drm {
