@@ -13,13 +13,15 @@
   <div class="tab-content">
     <div class="tab-pane" id="planes-online" role="tabpanel" tabindex="0">
       <div class="row">
-        <div class="container mt-1">
+        <div class="col mt-1">
           <p class="text-center">
             <small>
               <%= link_to "ver valores en USD", "/pricing-usd" %>
             </small>
           </p>
         </div>
+      </div>
+      <div class="row">
         <%= render "site/pricing/planes_online" %>
       </div>
       <div class="pb-4">
