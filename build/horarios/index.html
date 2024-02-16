@@ -27,7 +27,6 @@
   window.Stimulus = Application.start()
   Stimulus.register("navbar", class extends Controller {
     connect() {
-      console.log("nabar connected")
       const navLinks = document.querySelectorAll('.nav-item')
       const menuToggle = document.getElementById('navbarSupportedContent')
       const bsCollapse = new bootstrap.Collapse(menuToggle, {
@@ -46,7 +45,6 @@
     static targets = ["item"]
 
     connect() {
-      console.log("show_random connected")
       let items = this.itemTargets
       let item = items[Math.floor(Math.random()*items.length)]
       item.classList.remove('d-none')
@@ -58,7 +56,6 @@
     static values = { url: String }
 
     connect() {
-      console.log("learn-amount connected")
       this.renderValue()
     }
 
@@ -77,7 +74,6 @@
     static targets = ["name", "amount", "payButton"]
 
     connect() {
-      console.log("learn-subscription connected")
       this.renderValue()
     }
 
@@ -100,12 +96,9 @@
     static targets = ["authorized", "unauthorized"]
 
     connect(){
-      console.log("authorizer connected")
       if (this.isAuthorized()) {
-        console.log("authorized")
         this.authorizedTarget.classList.remove('d-none')
       } else {
-        console.log("unauthorized")
         this.unauthorizedTarget.classList.remove('d-none')
       }
     }
