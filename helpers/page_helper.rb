@@ -15,6 +15,7 @@ module PageHelper
   def js_redirect
     url = current_page.data["redirect_to"]
     <<-HTML
+      <div class="container"><p class="p-4 m-4">Un segundo, te estamos redireccionando...</p></div>
       <noscript>
         Navegador no soportado. Haga click <a href="#{url}">aquí</a> para continuar: <a href="#{url}">#{url}</a>.
       </noscript>
