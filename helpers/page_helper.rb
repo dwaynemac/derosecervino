@@ -19,7 +19,10 @@ module PageHelper
         Navegador no soportado. Haga click <a href="#{url}">aquí</a> para continuar: <a href="#{url}">#{url}</a>.
       </noscript>
       <script type="text/javascript">
-        window.location.href = "#{url}";
+        // Espero 1 segundo para Google Analytics
+        setTimeout(function(){
+              window.location.href = "#{url}";
+        }, 1000);
       </script>
     HTML
   end
