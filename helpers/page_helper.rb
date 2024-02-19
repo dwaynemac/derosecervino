@@ -20,10 +20,22 @@ module PageHelper
         Navegador no soportado. Haga click <a href="#{url}">aquí</a> para continuar: <a href="#{url}">#{url}</a>.
       </noscript>
       <script type="text/javascript">
-        // Espero 1 segundo para Google Analytics
-        setTimeout(function(){
-              window.location.href = "#{url}";
-        }, 1000);
+        function redirectToUrlOnEventOrTimeout(url) {
+          var timeoutId = setTimeout(function() {
+            console.log('Redirecting after timeout');
+            window.location.href = url;
+          }, 3000); // 3 seconds
+
+          window.addEventListener('gaReady', function() {
+            clearTimeout(timeoutId); // Cancel the timeout
+            setTimeout(function() {
+              console.log('Redirecting after event + 300ms');
+              window.location.href = url;
+            }, 300)
+          });
+        }
+
+        redirectToUrlOnEventOrTimeout("#{url}");
       </script>
     HTML
   end

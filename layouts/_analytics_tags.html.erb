@@ -1,7 +1,19 @@
+<script>
+  var gaReadyEvent = new CustomEvent('gaReady', {
+    bubbles: true,
+    cancelable: true
+  });
+
+  var broadcastGaReady = function() {
+    console.log("Google analytics is ready")
+    window.dispatchEvent(gaReadyEvent);
+  };
+</script>
+
 <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42" onload="broadcastGaReady();"></script>
 <!-- Google tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108" onload="broadcastGaReady()"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
