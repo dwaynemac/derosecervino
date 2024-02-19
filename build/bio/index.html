@@ -116,10 +116,22 @@
   <link rel="stylesheet" href="/assets/bio-5c198c727d9a62c1a3d61901420b0806b2684fbe34cb5d4a16b597fa3f5f5ddf.css" media="screen" />
   <link rel="stylesheet" href="/assets/site-9d4dbf175f108f742cce4b2d55f1515c0a57bd3c71300c12196b66f9448a8b73.css" media="screen" />
 
-  <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42"></script>
+  <script>
+  var gaReadyEvent = new CustomEvent('gaReady', {
+    bubbles: true,
+    cancelable: true
+  });
+
+  var broadcastGaReady = function() {
+    console.log("Google analytics is ready")
+    window.dispatchEvent(gaReadyEvent);
+  };
+</script>
+
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42" onload="broadcastGaReady();"></script>
 <!-- Google tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108" onload="broadcastGaReady()"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

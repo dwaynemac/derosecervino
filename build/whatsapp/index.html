@@ -116,10 +116,22 @@
     <link rel="stylesheet" href="/assets/site-9d4dbf175f108f742cce4b2d55f1515c0a57bd3c71300c12196b66f9448a8b73.css" media="screen" />
     <link rel="stylesheet" href="/assets/pricing-f7b481fe3911258dfa9a2846949c0696982e6b3cd284d9bd97a6fde03c6b8dc6.css" media="screen" />
 
-    <!-- Google tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42"></script>
+    <script>
+  var gaReadyEvent = new CustomEvent('gaReady', {
+    bubbles: true,
+    cancelable: true
+  });
+
+  var broadcastGaReady = function() {
+    console.log("Google analytics is ready")
+    window.dispatchEvent(gaReadyEvent);
+  };
+</script>
+
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYB8V3NF42" onload="broadcastGaReady();"></script>
 <!-- Google tag (gtag.js) - Google Ads -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1035293108" onload="broadcastGaReady()"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -189,10 +201,22 @@
         Navegador no soportado. Haga click <a href="https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0">aquí</a> para continuar: <a href="https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0">https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0</a>.
       </noscript>
       <script type="text/javascript">
-        // Espero 1 segundo para Google Analytics
-        setTimeout(function(){
-              window.location.href = "https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0";
-        }, 1000);
+        function redirectToUrlOnEventOrTimeout(url) {
+          var timeoutId = setTimeout(function() {
+            console.log('Redirecting after timeout');
+            window.location.href = url;
+          }, 3000); // 3 seconds
+
+          window.addEventListener('gaReady', function() {
+            clearTimeout(timeoutId); // Cancel the timeout
+            setTimeout(function() {
+              console.log('Redirecting after event + 300ms');
+              window.location.href = url;
+            }, 300)
+          });
+        }
+
+        redirectToUrlOnEventOrTimeout("https://api.whatsapp.com/send/?phone=5491131035453&text&type=phone_number&app_absent=0");
       </script>
 
 
