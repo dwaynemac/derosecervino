@@ -86,6 +86,7 @@
         .then(data => {
           this.nameTarget.innerText = data.name
           this.amountTarget.innerText = (data.amount_cents / 100).toLocaleString("es-AR")
+          this.amountTarget.dispatchEvent(new CustomEvent('learn-subscription:loaded'))
           if (this.hasPayButtonTarget){
             this.payButtonTarget.href = this.urlValue.replace(".json", "")
           }
@@ -112,12 +113,21 @@
     }
   })
 
+  Stimulus.register("small-thousands", class extends Controller {
+    connect() {
+      this.element.addEventListener('learn-subscription:loaded', () => {
+        // replace .ddd with <span class="thousands">.ddd</span>
+        this.element.innerHTML = this.element.innerText.replace(/\.(\d{3})$/g, '<span class="thousands">.$1</span>')
+      })
+    }
+  })
+
 </script>
 
 
     <link rel="stylesheet" href="/assets/navbar-76a6d8cd76b5caa283e7c31e0b725a2f1ec2e57284adca26074c14577be1deac.css" media="screen" />
     <link rel="stylesheet" href="/assets/site-9d4dbf175f108f742cce4b2d55f1515c0a57bd3c71300c12196b66f9448a8b73.css" media="screen" />
-    <link rel="stylesheet" href="/assets/pricing-f7b481fe3911258dfa9a2846949c0696982e6b3cd284d9bd97a6fde03c6b8dc6.css" media="screen" />
+    <link rel="stylesheet" href="/assets/pricing-3169579e50d85eff4d35f4ea140a8678a4da3a38ee170d79d01f73d064f7df02.css" media="screen" />
 
     <script>
   var gaReadyEvent = new CustomEvent('gaReady', {
@@ -230,7 +240,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
   <ul>
@@ -255,7 +271,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
     <ul>
@@ -279,7 +301,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
     <ul>
@@ -315,7 +343,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
   <ul>
@@ -346,7 +380,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
     <ul>
@@ -377,7 +417,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
     <ul>
@@ -438,7 +484,13 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span>$<span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+        <span>
+          $
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+    </h6>
     <hr>
     
     <ul>

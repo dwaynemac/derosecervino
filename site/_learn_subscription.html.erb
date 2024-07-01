@@ -7,7 +7,17 @@
 >
   <div class="card-body">
     <h5 class="card-title text-muted text-uppercase text-center font-brand-title"><span data-learn-subscription-target="name"></span></h5>
-    <h6 class="card-price text-center text-nowrap font-brand-title"><span><%= currency || "$" %><span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span></h6>
+    <h6 class="card-price text-center text-nowrap font-brand-title">
+      <% if currency.blank? %>
+        <span>
+          <%= currency || "$" %>
+          <span data-learn-subscription-target="amount" data-controller="small-thousands"></span>
+        </span>
+        <span class="period">/mes</span>
+      <% else %>
+        <span><%= currency || "$" %><span data-learn-subscription-target="amount"></span></span><span class="period">/mes</span>
+      <% end %>
+    </h6>
     <hr>
     <%= yield %>
     <div class="text-center">

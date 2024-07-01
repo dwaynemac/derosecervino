@@ -19,11 +19,14 @@
 .pricing .card-price {
   font-size: 3rem;
   margin: 0;
+  .thousands {
+    font-size: 0.85em;
+  }
+  .period {
+    font-size: 0.8rem;
+  }
 }
 
-.pricing .card-price .period {
-  font-size: 0.8rem;
-}
 
 .pricing ul {
   list-style-type: none;
